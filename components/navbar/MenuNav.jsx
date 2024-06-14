@@ -23,7 +23,7 @@ const MenuNav = () => {
       )}
 
       <div
-        className={`flex flex-col items-center justify-center gap-12  text-white absolute left-0 top-16 bg-main h-screen w-screen duration-700 ${
+        className={`flex z-10 flex-col items-center justify-center gap-12  text-white absolute left-0 top-16 bg-main h-screen w-screen duration-700 ${
           isOpen ? "ml-0" : "ml-[-100%]"
         }`}
       >
@@ -33,7 +33,9 @@ const MenuNav = () => {
               key={idx}
               className="text-white capitalize font-semibold text-2xl"
             >
-              <Link href={link.path}>{link.name}</Link>
+              <Link onClick={() => setIsOpen(false)} href={link.path}>
+                {link.name}
+              </Link>
             </div>
           );
         })}

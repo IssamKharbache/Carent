@@ -5,7 +5,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/Carousel";
+} from "../ui/carousel";
 
 //card shadcn
 import {
@@ -15,10 +15,10 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "../ui/card";
 
 import Autoplay from "embla-carousel-autoplay";
-import { profile } from "../../app/data";
+import { profile } from "../../app/contants/data";
 
 const CarouselHome = () => {
   return (

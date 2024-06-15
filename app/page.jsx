@@ -1,5 +1,7 @@
-import CarouselHome from "@/components/home/Carousel";
-import Image from "next/image";
+import CarouselHome from "../components/home/Carousel";
+import Explore from "../components/home/Explore";
+import SubFooter from "@/components/home/SubFooter";
+import Faq from "@/components/home/Faq";
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <CarouselHome />
       <div className="relative">
         <Explore />
+        <SubFooter />
+        <Faq />
       </div>
     </main>
   );

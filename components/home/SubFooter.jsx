@@ -1,0 +1,47 @@
+import { rentingNeeding } from "@/app/contants/data";
+import Image from "next/image";
+import React from "react";
+
+const SubFooter = () => {
+  return (
+    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 rounded-lg">
+      <Image
+        src="/brabus.jpg"
+        alt="Brabus"
+        height={1800}
+        width={1800}
+        className="h-full object-cover rounded-lg"
+      />
+      <div className="grid grid-cols-1 gap-4 mx-auto ml-8 md:ml-0">
+        {rentingNeeding.map((type, idx) => {
+          const Icon = type.icon;
+          return (
+            <div
+              className="bg-slate-200/70 rounded-lg mr-16 px-4 py-3 mb-8"
+              key={idx}
+            >
+              <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="flex">
+                  <span className="text-4xl bg-slate-300 rounded-full p-4">
+                    <Icon className="text-main" />
+                  </span>
+                </div>
+
+                <div className="">
+                  <h5 className="text-2xl text-center md:text-left text-gray-900 font-bold mb-4  mt-0 md:mt-8">
+                    {type.title}
+                  </h5>
+                  <p className="mb-4 border-l-8 border-main px-3 rounded-lg">
+                    {type.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default SubFooter;

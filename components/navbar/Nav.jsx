@@ -1,5 +1,5 @@
 "use client";
-import { links } from "@/app/data";
+import { links } from "../../app/contants/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -7,7 +7,7 @@ import React from "react";
 const Nav = () => {
   const pathName = usePathname();
   return (
-    <div className="flex items-center justify-between px-[10%] h-16 shadow-xl ">
+    <div className="flex items-center justify-between px-[10%] h-24 shadow-xl ">
       <div className="font-semibold text-2xl text-main">Carent</div>
       <div className="flex gap-6 capitalize">
         {links.map((link, idx) => {
@@ -16,7 +16,7 @@ const Nav = () => {
               key={idx}
               className={`font-semibold ${
                 pathName === link.path
-                  ? "text-main border-b-2  border-b-main "
+                  ? "text-main border-b-4  border-b-main "
                   : "text-black hover:text-main duration-200"
               }`}
               href={link.path}

@@ -1,18 +1,33 @@
+"use client";
 import { rentingNeeding } from "@/app/contants/data";
+import { fadeIn, textVariant2 } from "@/app/contants/motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const SubFooter = () => {
   return (
     <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 rounded-lg">
-      <Image
-        src="/brabus.jpg"
-        alt="Brabus"
-        height={1800}
-        width={1800}
-        className="h-full object-cover rounded-lg"
-      />
-      <div className="grid grid-cols-1 gap-4 mx-auto ml-8 md:ml-0">
+      <motion.div
+        variants={fadeIn("right", "tween", 0.5, 0.5)}
+        initial="hidden"
+        whileInView="show"
+      >
+        <Image
+          src="/brabus.jpg"
+          alt="Brabus"
+          height={1800}
+          width={1800}
+          className="h-full object-cover rounded-none md:rounded-lg"
+        />
+      </motion.div>
+
+      <motion.div
+        variants={fadeIn("left", "tween", 0.5, 0.5)}
+        initial="hidden"
+        whileInView="show"
+        className="grid grid-cols-1 gap-4 mx-auto ml-8 md:ml-0"
+      >
         {rentingNeeding.map((type, idx) => {
           const Icon = type.icon;
           return (
@@ -28,10 +43,10 @@ const SubFooter = () => {
                 </div>
 
                 <div className="">
-                  <h5 className="text-2xl text-center md:text-left text-gray-900 font-bold mb-4  mt-0 md:mt-8">
+                  <h5 className="text-2xl text-center md:text-left text-gray-900 font-bold mb-6  mt-0 md:mt-8 ">
                     {type.title}
                   </h5>
-                  <p className="mb-4 border-l-8 border-main px-3 rounded-lg">
+                  <p className="mb-4 border-l-8 border-main px-3 rounded-lg text-sm md:text-base">
                     {type.description}
                   </p>
                 </div>
@@ -39,7 +54,7 @@ const SubFooter = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };

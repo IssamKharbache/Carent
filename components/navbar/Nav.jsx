@@ -8,7 +8,9 @@ const Nav = () => {
   const pathName = usePathname();
   return (
     <div className="flex items-center justify-between px-[10%] h-24 shadow-xl ">
-      <div className="font-semibold text-2xl text-main">Carent</div>
+      <Link href="/" className="font-semibold text-2xl text-main">
+        Carent
+      </Link>
       <div className="flex gap-6 capitalize">
         {links.map((link, idx) => {
           return (

@@ -13,10 +13,7 @@ export const links = [
     name: "services",
     path: "/services",
   },
-  {
-    name: "local transfers",
-    path: "/local-transfers",
-  },
+
   {
     name: "transfers",
     path: "/transfers",
@@ -96,5 +93,40 @@ export const faqQuestions = [
     question: "What is included in the rental price?",
     answer:
       "Our Rental prices typically include the cost of the vehicle, basic insurance coverage, and any applicable taxes and fees",
+  },
+];
+
+export const ourObjective = [
+  {
+    title: "Customer Satisfaction",
+    description:
+      "Our goal is to operate with efficiency and reliability, streamlining processes to deliver prompt, hassle-free service and maintain a fleet of well-maintained vehicles",
+    image: "/objective/bmw.jpg",
+  },
+  {
+    title: "Operational Excellence",
+    description:
+      "We are committed to providing exceptional service that exceeds expectations, ensuring every customer enjoys a seamless and enjoyable rental experience",
+    image: "/objective/kia.jpg",
+  },
+  {
+    title: "Fleet Quality",
+    description:
+      " Our objective is to maintain a diverse fleet of well-maintained vehicles, offering the latest models and a variety of options to cater to different preferences and purposes",
+    image: "/objective/mer.jpg",
+  },
+];
+
+export const services = [
+  {
+    title: "Wedding Car Rentals",
+    description:
+      "Offer stylish and elegant vehicles for weddings and special events, ensuring a memorable and luxurious experience",
+    features:
+      "Decorative options, chauffeur service, flexible rental durations, and coordination with event planners.",
+  },
+  {
+    title: "",
+    description: "",
   },
 ];

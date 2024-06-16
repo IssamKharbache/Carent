@@ -26,7 +26,7 @@ const SubFooter = () => {
         variants={fadeIn("left", "tween", 0.5, 0.5)}
         initial="hidden"
         whileInView="show"
-        className="grid grid-cols-1 gap-4 mx-auto ml-8 md:ml-0"
+        className="grid grid-cols-1 gap-4 mx-auto w-full ml-8 md:ml-0"
       >
         {rentingNeeding.map((type, idx) => {
           const Icon = type.icon;

@@ -27,7 +27,7 @@ const OurObjective = () => {
         {ourObjective.map((objective, idx) => {
           return (
             <div
-              className="py-8 px-8 border-2 border-gray-200 rounded-lg shadow-xl hover:scale-105 duration-300"
+              className="py-8 mr-4 flex flex-col items-center  ml-8 border-2 border-gray-200 rounded-lg shadow-xl hover:scale-105 duration-300"
               key={idx}
             >
               <div className="">
@@ -35,7 +35,7 @@ const OurObjective = () => {
                   src={objective.image}
                   height={1400}
                   width={1800}
-                  className="w-full object-cover h-80 rounded-full"
+                  className="w-40  object-cover h-40 md:h-80 md:w-full rounded-full"
                 />
               </div>
               <div className="flex flex-col items-center justify-center p-8">

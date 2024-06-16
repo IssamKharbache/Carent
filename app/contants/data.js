@@ -124,9 +124,46 @@ export const services = [
       "Offer stylish and elegant vehicles for weddings and special events, ensuring a memorable and luxurious experience",
     features:
       "Decorative options, chauffeur service, flexible rental durations, and coordination with event planners.",
+    image: "/services/weeding.jpg",
   },
   {
-    title: "",
-    description: "",
+    title: "Airport Transfers",
+    description:
+      "Provide convenient pickup and drop-off services directly from airports to accommodate travelers arriving or departing",
+    features:
+      "Meet-and-greet service, flight tracking for delays, luggage assistance, and comfortable, reliable transportation.",
+    image: "/services/airport.jpg",
+  },
+  {
+    title: "Chauffeur Services",
+    description:
+      "Provide professional drivers for personalized transportation needs, offering comfort, convenience, and local expertise",
+    features:
+      "Experienced chauffeurs, luxury vehicle options, hourly or daily rates, and customizable itineraries.",
+    image: "/services/chauffeur.png",
+  },
+  {
+    title: "Event Shuttle Services",
+    description:
+      "Provide shuttle transportation solutions for events such as conferences, festivals, and sports gatherings",
+    features:
+      "Shuttle buses or vans, route planning, group transportation management, and on-site coordination.",
+    image: "/services/event.jpg",
+  },
+  {
+    title: "Celebrity and VIP Services",
+    description:
+      "Offer discreet and exclusive transportation services for celebrities, executives, and high-profile individuals",
+    features:
+      "Confidentiality agreements, luxury vehicle options, security arrangements, and personalized concierge services.",
+    image: "/services/vip.png",
+  },
+  {
+    title: "Relocation Services",
+    description:
+      "Assist individuals or businesses with temporary vehicle rentals during relocation or moving processes",
+    features:
+      "One-way rentals, flexible pickup/drop-off locations, moving accessories (e.g., cargo vans, moving trucks).",
+    image: "/services/relocation.jpg",
   },
 ];

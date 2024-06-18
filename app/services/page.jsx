@@ -1,11 +1,9 @@
 "use client";
 import Image from "next/image";
-import React from "react";
 import { services } from "../contants/data";
 import { motion } from "framer-motion";
 import { fadeIn } from "../contants/motion";
-import { Button } from "@/components/ui/button";
-
+import Banners from "@/components/Banners";
 import {
   Dialog,
   DialogContent,
@@ -17,27 +15,12 @@ import {
 const page = () => {
   return (
     <div className="">
-      <div
-        style={{
-          backgroundImage: `url(/alpha.jpg)`,
-        }}
-        className="w-full h-96 bg-cover bg-center pt-5 bg-no-repeat relative"
-      >
-        <div className="absolute top-0 right-0 bottom-0 left-0 bg-[rgba(0,0,0,0.6)] opacity-90"></div>
-        <div className="flex items-center justify-between relative py-8 px-12">
-          <h1 className="text-left py-4 px-8 text-8xl font-semibold text-main">
-            Services
-          </h1>
-          <Button className="flex font-semibold bg-main hover:bg-main/70">
-            Contact us for more
-          </Button>
-        </div>
-        <p className="px-24 text-center py-4 text-white font-semibold text-2xl relative">
-          Experience our comprehensive service section for seamless car rentals,
-          ensuring your journey is as smooth as your ride
-        </p>
-      </div>
-
+      <Banners
+        title="Services"
+        text="Experience our comprehensive service section for seamless car rentals,
+        ensuring your journey is as smooth as your ride"
+        img="/alpha.jpg"
+      />
       <motion.div
         variants={fadeIn("up", "tween", 0.5, 0.5)}
         initial="hidden"

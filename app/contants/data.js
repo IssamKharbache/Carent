@@ -15,8 +15,8 @@ export const links = [
   },
 
   {
-    name: "transfers",
-    path: "/transfers",
+    name: "Our fleet",
+    path: "/our-fleet",
   },
 ];
 
@@ -165,5 +165,57 @@ export const services = [
     features:
       "One-way rentals, flexible pickup/drop-off locations, moving accessories (e.g., cargo vans, moving trucks).",
     image: "/services/relocation.jpg",
+  },
+];
+
+export const fleet = [
+  {
+    title: "Economy Cars",
+    description:
+      "Compact and fuel-efficient, perfect for city driving and budget-conscious travelers.",
+    image: "/fleet/exo.png",
+  },
+  {
+    title: "Sedans",
+    description:
+      "Mid-sized cars offering comfort and style, ideal for business trips or longer journeys.",
+    image: "/fleet/sedan.jpg",
+  },
+
+  {
+    title: "SUVs",
+    description:
+      "Sport Utility Vehicles, suitable for rough terrain or carrying more passengers and luggage.",
+    image: "/fleet/suv.jpg",
+  },
+  {
+    title: "Hybrid/Electric Cars",
+    description:
+      " Environmentally friendly vehicles that offer fuel efficiency or zero-emission driving.",
+    image: "/fleet/electric.jpg",
+  },
+  {
+    title: "Exotic/Performance Cars",
+    description:
+      "High-performance vehicles designed for driving enthusiasts or special occasions.",
+    image: "/fleet/lambo.jpg",
+  },
+  {
+    title: "Convertibles",
+    description:
+      "Fun, open-top cars for enjoying scenic drives or sunny weather.",
+    image: "/fleet/convertible.jpg",
+  },
+  {
+    title: "Luxury Cars",
+    description:
+      "High-end vehicles with premium features, aimed at customers looking for style, comfort, and prestige.",
+    image: "/fleet/luxury.jpg",
+  },
+  {
+    title: "Minivans",
+    description:
+      "Spacious vehicles ideal for families or groups needing extra seating and cargo capacity.",
+    image: "/fleet/minivan.jpg",
   },
 ];

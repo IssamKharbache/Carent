@@ -14,7 +14,9 @@ const MenuNav = () => {
   }, [isOpen]);
   return (
     <div className="h-16  flex items-center   justify-between px-6">
-      <div className="font-semibold text-2xl text-main ">Carent</div>
+      <Link href="/" className="font-semibold text-2xl text-main ">
+        Carent
+      </Link>
       {!isOpen ? (
         <HiMenuAlt1
           onClick={() => setIsOpen(true)}

@@ -7,7 +7,7 @@ import React from "react";
 
 const SubFooter = () => {
   return (
-    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 rounded-lg">
+    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12  rounded-lg">
       <motion.div
         variants={fadeIn("right", "tween", 0.5, 0.5)}
         initial="hidden"
@@ -26,13 +26,13 @@ const SubFooter = () => {
         variants={fadeIn("left", "tween", 0.5, 0.5)}
         initial="hidden"
         whileInView="show"
-        className="grid grid-cols-1 gap-4 mx-auto w-full ml-8 md:ml-0"
+        className="grid grid-cols-1 gap-4 w-full  md:w-2/3  mx-auto"
       >
         {rentingNeeding.map((type, idx) => {
           const Icon = type.icon;
           return (
             <div
-              className="bg-slate-200/70 rounded-lg mr-16 px-4 py-3 mb-8"
+              className="bg-slate-200/70 rounded-lg py-6 px-4   mb-8"
               key={idx}
             >
               <div className="flex flex-col md:flex-row gap-8 items-center">

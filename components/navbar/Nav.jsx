@@ -11,7 +11,7 @@ const Nav = () => {
       <Link href="/" className="font-semibold text-2xl text-main">
         Carent
       </Link>
-      <div className="flex gap-6 capitalize">
+      <div className="flex gap-6 capitalize text-xl">
         {links.map((link, idx) => {
           return (
             <Link
@@ -19,7 +19,7 @@ const Nav = () => {
               className={`font-semibold ${
                 pathName === link.path
                   ? "text-main border-b-4  border-b-main "
-                  : "text-black hover:text-main duration-200"
+                  : "text-gray-700 hover:text-main duration-200"
               }`}
               href={link.path}
             >

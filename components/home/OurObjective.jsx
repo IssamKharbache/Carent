@@ -14,19 +14,19 @@ const OurObjective = () => {
         variants={fadeIn("up", "spring", 0.5, 1)}
         whileInView="show"
         initial="hidden"
+        viewport={{ once: true }}
         className="text-center font-extrabold text-4xl md:text-6xl mt-24 mb-24"
       >
         Our objective
       </motion.h1>
-      <motion.div
-        variants={fadeIn("up", "spring", 0.5, 1)}
-        whileInView="show"
-        initial="hidden"
-        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-4 mt-8 gap-8 "
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-4 mt-8 gap-8 ">
         {ourObjective.map((objective, idx) => {
           return (
-            <div
+            <motion.div
+              variants={fadeIn("up", "spring", 0.5, 1)}
+              whileInView="show"
+              initial="hidden"
+              viewport={{ once: true }}
               className="py-8 mr-4 flex flex-col items-center  ml-8 border-2 border-gray-200 rounded-lg shadow-xl hover:scale-105 duration-300"
               key={idx}
             >
@@ -46,10 +46,10 @@ const OurObjective = () => {
                   {objective.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
           );
         })}
-      </motion.div>
+      </div>
     </div>
   );
 };

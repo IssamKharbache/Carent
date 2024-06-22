@@ -5,7 +5,7 @@ import { fadeIn, textVariant2 } from "../contants/motion";
 import Image from "next/image";
 import { fleet } from "../contants/data";
 
-const page = () => {
+const OurFleetPage = () => {
   return (
     <div>
       <Banners
@@ -28,6 +28,7 @@ const page = () => {
             variants={fadeIn("up", "string", 0.5, 0.5)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
             className="flex flex-col md:flex-row gap-8 mb-14 border-b-4 border-gray-300 py-8   "
           >
             <Image
@@ -52,4 +53,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default OurFleetPage;

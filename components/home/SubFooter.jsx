@@ -1,18 +1,12 @@
 "use client";
 import { rentingNeeding } from "@/app/contants/data";
-import { fadeIn, textVariant2 } from "@/app/contants/motion";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const SubFooter = () => {
   return (
-    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12  rounded-lg">
-      <motion.div
-        variants={fadeIn("right", "tween", 0.5, 0.5)}
-        initial="hidden"
-        whileInView="show"
-      >
+    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12  rounded-lg mb-6">
+      <div>
         <Image
           src="/brabus.jpg"
           alt="Brabus"
@@ -20,14 +14,9 @@ const SubFooter = () => {
           width={1800}
           className="h-full object-cover rounded-none md:rounded-lg"
         />
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={fadeIn("left", "tween", 0.5, 0.5)}
-        initial="hidden"
-        whileInView="show"
-        className="grid grid-cols-1 gap-4 w-full  md:w-2/3  mx-auto"
-      >
+      <div className="grid grid-cols-1 gap-4 w-full  md:w-2/3  mx-auto">
         {rentingNeeding.map((type, idx) => {
           const Icon = type.icon;
           return (
@@ -54,7 +43,7 @@ const SubFooter = () => {
             </div>
           );
         })}
-      </motion.div>
+      </div>
     </div>
   );
 };

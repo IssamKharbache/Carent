@@ -12,7 +12,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-const page = () => {
+
+const ServicesPage = () => {
   return (
     <div className="">
       <Banners
@@ -26,6 +27,7 @@ const page = () => {
         initial="hidden"
         whileInView="show"
         className="max-w-[1400px] py-4 px-8 mx-auto"
+        viewport={{ once: true }}
       >
         <h1 className="text-4xl md:text-7xl text-center font-extrabold mt-16 text-main">
           Our services
@@ -74,4 +76,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ServicesPage;

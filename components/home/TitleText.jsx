@@ -8,6 +8,7 @@ const TitleText = ({ textStyles, title }) => {
       variants={textVariant2}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       className={`mt-2 text-main font-bold md:text-[36px] text-[36px] text-center ${textStyles}`}
     >
       {title}

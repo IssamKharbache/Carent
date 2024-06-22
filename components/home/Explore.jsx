@@ -22,6 +22,7 @@ const Explore = () => {
           variants={fadeIn("right", "tween", 0.5, 0.5)}
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true }}
           className="my-9 flex lg:flex-row flex-col min-h-[50vh] gap-8 lg:mx-32"
         >
           {cardsInfo?.map((info, idx) => {

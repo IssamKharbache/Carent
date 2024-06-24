@@ -5,8 +5,11 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 
-//
+// booking steps
 import StepOneForm from "@/components/forms/StepOneForm";
+import StepTwoForm from "@/components/forms/StepTwoForm";
+import ContactDetailsForm from "@/components/forms/ContactDetailsForm";
+import BookingSummary from "@/components/forms/BookingSummary";
 
 const BookingPage = ({ searchParams }) => {
   const currentStep = parseInt(searchParams.index) || 1;
@@ -44,11 +47,13 @@ const BookingPage = ({ searchParams }) => {
         </div>
       </div>
       {currentStep === 1 && <StepOneForm form={form} />}
-      {currentStep === 2 && <StepOneForm form={form} />}
+      {currentStep === 2 && <StepTwoForm form={form} />}
+      {currentStep === 3 && <ContactDetailsForm form={form} />}
+      {currentStep === 4 && <BookingSummary form={form} />}
       <div
         className={`${
           currentStep == 4 ? "hidden" : "flex"
-        } justify-between items-center mx-10 py-3`}
+        } justify-between items-center mx-10 py-3 mt-4`}
       >
         <Link
           href={`/booking?index=${

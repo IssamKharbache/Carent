@@ -18,7 +18,7 @@ const StepOneForm = ({ form }) => {
     [getSource, getDestination]
   );
   return (
-    <div className="flex max-w-[1400px] gap-4 w-full  mx-auto ">
+    <div className="flex flex-col md:flex-row max-w-[1400px] gap-4 w-full  mx-auto ">
       <Form {...form}>
         <form className="w-full flex flex-col  gap-6 bg-white p-5 shadow-md border rounded-lg">
           <DateTimeForm

@@ -32,6 +32,7 @@ const OurObjective = () => {
             >
               <div className="">
                 <Image
+                  alt={objective.title}
                   src={objective.image}
                   height={1400}
                   width={1800}

@@ -28,7 +28,6 @@ const Nav = () => {
           );
         })}
       </div>
-      <div className="">Authentication</div>
     </div>
   );
 };
